@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.basicviewsapplication.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_MainFragment_to_BreakpointFragment"
+            app:destination="@id/BreakpointFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_DebugWindowFragment"
+            app:destination="@id/DebugWindowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BreakpointFragment"
+        android:name="com.example.basicviewsapplication.BreakpointFragment"
+        android:label="@string/breakpoint_fragment_label"
+        tools:layout="@layout/fragment_breakpoint_demo">
+
+        <action
+            android:id="@+id/action_BreakpointFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TransactionFragment"
+        android:name="com.example.basicviewsapplication.TransactionFragment"
+        android:label="@string/transaction_fragment_label"
+        tools:layout="@layout/fragment_transaction">
+
+        <action
+            android:id="@+id/action_TransactionFragment_to_DebugWindowFragment"
+            app:destination="@id/DebugWindowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DebugWindowFragment"
+        android:name="com.example.basicviewsapplication.DebugWindowFragment"
+        android:label="@string/debug_window_fragment_label"
+        tools:layout="@layout/fragment_debug_window_demo">
+
+        <action
+            android:id="@+id/action_DebugWindowFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_DebugWindowFragment_to_TransactionFragment"
+            app:destination="@id/TransactionFragment" />
+    </fragment>
+</navigation>

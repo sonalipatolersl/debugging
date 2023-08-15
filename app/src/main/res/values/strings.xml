@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Debugging Demo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="main_activity_label">Main Screen</string>
+    <string name="main_fragment_label">Main Fragment</string>
+    <string name="first_fragment_label">Deposit Fragment</string>
+    <string name="second_fragment_label">Withdraw Fragment</string>
+    <string name="refresh_button_text">Refresh screen</string>
+    <string name="sort_button_text">Sort random values</string>
+    <string name="load_image_button_text">Show image</string>
+    <string name="perform_operation_button_text">Provide random calculation demo</string>
+    <string name="increase_counter_button_text">Increase counter</string>
+    <string name="open_account_button_text">Open account</string>
+    <string name="deposit_button_text">Deposit</string>
+    <string name="withdraw_button_text">Withdraw</string>
+    <string name="enter_amount_hint">Enter amount</string>
+    <string name="breakpoint_fragment_label">Breakpoint demo</string>
+    <string name="transaction_fragment_label">Transaction demo</string>
+    <string name="debug_window_fragment_label">Debug Window demo</string>
+    <string name="breakpoint_demo_button_text">Breakpoint demo</string>
+    <string name="debug_window_button_text">Debug Window Features demo</string>
+    <string name="multithreading_demo_button_text">Multithreading demo</string>
+    <string name="trace_account_object_demo_button_text">Trace object demo</string>
+
+</resources>
