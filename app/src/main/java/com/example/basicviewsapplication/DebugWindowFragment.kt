@@ -55,18 +55,18 @@ class DebugWindowFragment : Fragment() {
 
     private fun generateUniqueList() {
         uniqueNumbers = mutableListOf()
+        val list1 = listOf(1, 4, 3, 5, 6)
         val thread1 = thread {
-            for (i in 1..5) {
-                val number = Random.nextInt(1, 5)
+            for (number in list1) {
                 //synchronized(mutex) {
                     addIfNotPresent(number)
                // }
             }
         }
 
+        val list2 = listOf(3, 5, 2, 6)
         val thread2 = thread {
-            for (i in 1..5) {
-                val number = Random.nextInt(1, 5)
+            for (number in list2) {
                 //synchronized(mutex) {
                     addIfNotPresent(number)
                // }

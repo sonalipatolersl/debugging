@@ -29,8 +29,8 @@ class BreakpointFragment : Fragment() {
         override fun run() {
             refreshScreen()
 
-            // Re-post the Runnable after 2 minutes
-            handler.postDelayed(this, 2 * 60 * 1000) // 2 minutes in milliseconds
+            // Re-post the Runnable after 1 milliseconds
+            handler.postDelayed(this, 1000) // 1 milliseconds
         }
     }
 
@@ -47,7 +47,9 @@ class BreakpointFragment : Fragment() {
 
         // region Sort button click handling
         binding.sort.setOnClickListener {
-            val randomValues = MutableList(15) { Random.nextInt(1, 10001) }
+            val randomValues = MutableList(15) {
+                Random.nextInt(1, 10001)
+            }
             println("Unsorted values: $randomValues")
 
             sortList(randomValues)
